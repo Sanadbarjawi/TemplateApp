@@ -46,18 +46,6 @@ extension UIColor {
         static let gray = UIColor(hexString: "757575")
     }
     
-    class var textfieldBackground: UIColor{
-        return Palette.gray
-    }
-    
-    class var primaryText: UIColor {
-        return Palette.black
-    }
-
-    class var secondaryText: UIColor {
-        return Palette.gray
-    }
-
     // MARK: - Background
     
     /// Returns the light palette color used for the background for standard content.
@@ -202,7 +190,7 @@ extension UIViewController: ColorThemeObserving  {
                                           object: nil)
     }
     
-     @objc func didChangeColorTheme(_ notification: Notification) {
+    @objc func didChangeColorTheme(_ notification: Notification) {
         updateColors(from: notification)
     }
 }
