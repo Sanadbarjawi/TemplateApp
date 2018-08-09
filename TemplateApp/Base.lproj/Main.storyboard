@@ -77,7 +77,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="961-Fh-rxy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Welcome to Template App" id="P47-rj-GSH"/>
+                    <navigationItem key="navigationItem" title="Welcome to Template App" id="P47-rj-GSH">
+                        <barButtonItem key="rightBarButtonItem" title="Dummy" id="Zja-XF-a9J">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="MQy-dW-D2T" kind="push" id="u3E-j3-1kl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bottomButton" destination="ssM-zZ-xLq" id="FaR-7W-eiH"/>
                         <outlet property="containerView" destination="HiF-dA-a4f" id="zrR-lJ-C3e"/>
@@ -100,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCN-0m-Itp">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-CT-ynD">
                                         <rect key="frame" x="16" y="33" width="343" height="249.5"/>
@@ -156,6 +163,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uBg-PU-Bia"/>
                     </view>
+                    <navigationItem key="navigationItem" id="o70-6d-nZL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zG-bF-iPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

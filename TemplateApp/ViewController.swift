@@ -22,12 +22,17 @@ class ViewController: UIViewController, ColorUpdatable{
         containerView.backgroundColor = .contentBackground(for: theme)
         txtField1.backgroundColor = .txtfieldBackground(for: theme)
         txtField2.backgroundColor = .txtfieldBackground(for: theme)
+        txtField3.backgroundColor = .txtfieldBackground(for: theme)
+        txtField4.backgroundColor = .txtfieldBackground(for: theme)
         bottomButton.setTitleColor(.buttonTextColor(for: theme), for: .normal)
     }
     var theme: Theme = .light
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         addDidChangeColorThemeObserver()
         updateColors(for: theme)
     }
