@@ -51,8 +51,8 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssM-zZ-xLq">
-                                        <rect key="frame" x="313" y="553" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="284" y="553" width="75" height="30"/>
+                                        <state key="normal" title="Dark mode"/>
                                         <connections>
                                             <action selector="changeThemePressed:" destination="EuT-q0-990" eventType="touchUpInside" id="FrV-qf-RJC"/>
                                         </connections>
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zG-bF-iPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2388" y="134"/>
+            <point key="canvasLocation" x="2330" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="D5L-HQ-127">

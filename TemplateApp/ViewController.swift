@@ -18,12 +18,13 @@ class ViewController: UIViewController, ColorUpdatable{
     @IBOutlet weak var bottomButton: UIButton!
     
     func updateColors(for theme: Theme) {
+        navigationController?.navigationBar.barTintColor = .navbarTintColor(for: theme)
         containerView.backgroundColor = .contentBackground(for: theme)
         txtField1.backgroundColor = .txtfieldBackground(for: theme)
         txtField2.backgroundColor = .txtfieldBackground(for: theme)
         bottomButton.setTitleColor(.buttonTextColor(for: theme), for: .normal)
     }
-    var theme: Theme = .dark
+    var theme: Theme = .light
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +37,8 @@ class ViewController: UIViewController, ColorUpdatable{
     }
     @IBAction func changeThemePressed(_ sender: Any) {
        
-       CustomNotification.didChangeColorTheme.post(userInfo: Theme.light)
+       CustomNotification.didChangeColorTheme.post(userInfo: Theme.dark)
+        bottomButton.setTitle("Welcome to the dark side", for: .normal)
     }
     
 }

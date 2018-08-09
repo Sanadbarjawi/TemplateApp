@@ -43,7 +43,7 @@ extension UIColor {
     struct Palette {
         static let black = UIColor.black
         static let white = UIColor.white
-        static let gray = UIColor(hexString: "757575")
+        static let gray = UIColor.lightGray
     }
     
     // MARK: - Background
@@ -61,6 +61,16 @@ extension UIColor {
             return Palette.black
         }
     }
+    
+    class func navbarTintColor(for theme: Theme) -> UIColor {
+        switch theme {
+        case .light:
+            return Palette.white
+        case .dark:
+            return Palette.gray
+        }
+    }
+    
     class func txtfieldBackground(for theme: Theme) -> UIColor{
         switch theme {
         case .light:
